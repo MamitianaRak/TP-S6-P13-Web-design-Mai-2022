@@ -31,6 +31,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $data['listeactusrand'] = $this->ActualiteService->getListActusrand();
             $data['listeactus'] = $this->ActualiteService->getListActusLast();
             $data['view'] = "actualite";
+
+            $data['title'] = "Actualités du réchauffement climatique ";
+            $data['description'] = "Europe,Afrique,Amerique,Australie et Asie sont tous touchés par le réchauffement climatique ";
             $this->load->view('template', $data);
            
         }
@@ -52,6 +55,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $data['contenulast'] = $this->ActualiteService->getListActusLast3();          
             $data['contenurand'] = $this->ActualiteService->getListActusrand2();
             $data['view'] = "fiche";
+
+            $data['title'] = $data['contenu']['titre'];
+            $data['description'] = $data['contenu']['resume'];
             $this->load->view('template', $data);
             
             

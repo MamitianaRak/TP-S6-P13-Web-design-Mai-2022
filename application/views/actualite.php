@@ -8,6 +8,9 @@
         <div class="row justify-content-center">
           <div id="carouselExampleControls" style="background-color: rgba(169,169,169,0.3);" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
             <?php $conteur = 0 ; $isa = 0; ?>
             <?php for($j=0;$j<3;$j++) { ?>
@@ -25,7 +28,7 @@
                             <h3><?php echo $listeactusrand[$isa]['titre'] ?></h3>
 
                             <p style="height: 70px;" ><?php echo $listeactusrand[$isa]['resume'] ?></p>
-                                <a href="<?php echo 'actualite/'.$listeactusrand[$isa]['url'] ?>" class="btn-card">Read</a>   
+                                <a href="<?php echo 'actualite/'.$listeactusrand[$isa]['url'] ?>" class="btn-card">Lire</a>   
                         </div>
                     </div>
                     </div>
@@ -68,7 +71,7 @@
                         <div class="card-desc">
                             <h3><?php echo $listeactus[$j]['titre'] ?></h3>
                             <p><?php echo $listeactus[$j]['resume'] ?></p>
-                                <a href="<?php echo 'actualite/'.$listeactusrand[$j]['url'] ?>" class="btn-card">Read</a>   
+                                <a href="<?php echo 'actualite/'.$listeactusrand[$j]['url'] ?>" class="btn-card">Lire</a>   
                         </div>
                     </div>
                     </div>

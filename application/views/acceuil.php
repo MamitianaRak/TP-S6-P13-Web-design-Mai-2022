@@ -7,23 +7,23 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-6.jpg)">
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-6.webp)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Réchauffement climatique : Sauvons notre planete</h2>
               <p class="animate__animated animate__fadeInUp">Nous pouvons tous contribuer à atténuer les changements climatiques. Que ce soit par nos déplacements, par notre consommation d’électricité ou par notre alimentation, nous pouvons faire la différence.</p>
-              <a href="<?php  echo base_url("climat/solutions") ?>" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <a href="<?php  echo base_url("climat/solutions") ?>" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
             </div>
           </div>
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-7.webp)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <h2 class="animate__animated animate__fadeInDown">Suivez nous chaque jour!</h2>
+              <p class="animate__animated animate__fadeInUp">Nous apportons des nouvelles de notre planète.</p>
+              <a href="<?php  echo base_url("actualite") ?>" class="btn-get-started animate__animated animate__fadeInUp scrollto">En savoir plus</a>
             </div>
           </div>
         </div>
@@ -75,11 +75,11 @@
         <div class="row justify-content-center " >
           <div class="col-4  d-flex justify-content-center ">
             <div class="card" style="width: 30rem;">
-              <img src="<?php echo img_loader("team/team-5.jpg") ?>" class="card-img-top" alt="">
+              <img src="<?php echo img_loader("team/team-5.webp") ?>" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">Cause du rechauffement climatique</h5>
                 <p class="card-text">L’action de l’homme, au cœur du réchauffement climatique</p>
-                <a href="<?php  echo base_url("climat/causes") ?>" class="btn">Know More</a>
+                <a href="<?php  echo base_url("climat/causes") ?>" class="btn">En savoir plus</a>
               </div>
             </div>
             
@@ -87,11 +87,11 @@
  
            <div class="col-4  d-flex justify-content-center ">
             <div class="card" style="width: 30rem;">
-              <img src="<?php echo img_loader("team/team-4.jpg") ?>" class="card-img-top" alt="">
+              <img src="<?php echo img_loader("team/team-4.webp") ?>" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">Consequences du rechauffement climatique</h5>
                 <p class="card-text">L’humanité sous la menace  du réchauffement climatique</p>
-                <a href="<?php  echo base_url("climat/consequences") ?>" class="btn">Know More</a>
+                <a href="<?php  echo base_url("climat/consequences") ?>" class="btn">En savoir plus</a>
               </div>
             </div>
             

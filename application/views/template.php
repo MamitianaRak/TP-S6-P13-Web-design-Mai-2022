@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Green Bootstrap Template - Index</title>
-  <meta content="" name="description">
+  <title><?php echo $title; ?></title>
+  <meta content="<?php echo $description; ?>" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
   <link href="<?php echo v_loader("animate.css/animate.min.css") ?>" rel="stylesheet">
   <link href="<?php echo v_loader("bootstrap/css/bootstrap.min.css") ?>" rel="stylesheet">
@@ -27,12 +27,7 @@
   <link href="<?php echo v_loader("swiper/swiper-bundle.min.css") ?>" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="<?php echo css_loader("style.css") ?>" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <link href="<?php echo css_loader("style.min.css") ?>" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Green - v4.7.0
   * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
@@ -47,23 +42,21 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Climat news</a></h1>
+      <h1 class="logo me-auto"><a href="<?php  echo base_url() ?>">Climat News</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#home">Acceuil</a></li>
-          <li><a class="nav-link scrollto" href="services.html">A savoir</a></li>
-          <li class="dropdown"><a href="<?php  echo base_url("actualite") ?>"><span>Actualite</span> <i class="bi bi-chevron-down"></i></a>
+        <ul class="gg">
+          <li><a class="nav-link scrollto" href="<?php  echo base_url() ?>">Acceuil</a></li>
+          <li><a class="nav-link scrollto" href="<?php  echo base_url("actualite") ?>">Actualites</a></li>
+          <li class="dropdown"><a href=""><span>A savoir</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Ecologique</a></li>
-              <li><a href="#">Politique</a></li>
-              <li><a href="#">Technology</a></li>
-              <li><a href="#">Economie et Demographie</a></li>
+              <li><a href="<?php  echo base_url("climat/causes") ?>">Causes</a></li>
+              <li><a href="<?php  echo base_url("climat/consequences") ?>">Consequences</a></li>
+              <li><a href="<?php  echo base_url("climat/solutions") ?>">Solutions</a></li>
             </ul>
           </li>
-          <li><a class="getstarted scrollto" href="#about">A propos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -76,8 +69,8 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Green</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3>Climat News</h3>
+      <p>Ce site donne des informations sur le réchauffement climatiques à travers le Monde.</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -86,14 +79,7 @@
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Green</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/green-free-one-page-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright 2022 <strong><span>Mamitiana</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->

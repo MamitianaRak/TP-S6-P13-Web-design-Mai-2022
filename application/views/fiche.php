@@ -36,7 +36,7 @@
 
                                 </div><!-- end pp -->
                             </div><!-- end content -->
-
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
                             <hr class="invis1">
 
                             <div class="custombox prevnextpost clearfix">
@@ -79,16 +79,7 @@
 
                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                         <div class="sidebar">
-                            <div class="widget">
-                                <div class="banner-spot clearfix">
-                                    <div class="banner-img">
-                                        <img src="upload/banner_07.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
-                                </div><!-- end banner -->
-                            </div><!-- end widget -->
-
                           
-
                             <div class="widget">
                                 <h2 class="widget-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Articles populaires</font></font></h2>
                                 <div class="blog-list-widget">
@@ -96,7 +87,7 @@
 
 
                                         <?php for($i=0;$i<count($contenulast);$i++) { ?>
-                                        <a href="<?php echo 'actualite/'.$contenulast[$i]['url']; ?>" class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <a href="<?php echo base_url('actualite/'.$contenulast[$i]['url']); ?>" class="list-group-item list-group-item-action flex-column align-items-start">
                                             <div class="w-100 justify-content-between">
                                                 <img src="<?php echo img_loader($contenulast[$i]['img']) ?>" alt="" class="img-fluid float-left">
                                                 <h5 class="mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $contenulast[$i]['resume']; ?></font></font></h5>

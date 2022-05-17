@@ -1,5 +1,5 @@
 -Lien du FO :  https://projetclimat.herokuapp.com
--Lien du BO : https://projetclimat.herokuapp.com/admin/actualite
+-Lien du BO : https://projetclimat.herokuapp.com/admin
 -User BO : Admin
 -Password BO : 0000
 -num ETU :  ETU1290 
